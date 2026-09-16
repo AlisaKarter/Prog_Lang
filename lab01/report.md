@@ -62,4 +62,6 @@
 ### 4. Проверить, что произойдет при сборке, если один из объектных файлов будет потерян.
 ### <img width="1083" height="89" alt="image" src="https://github.com/user-attachments/assets/8fd0e014-0d91-4f21-9dfc-f87a49f4e12e" />
 #### При сборке, когда один фал потерян программа выводит сообщение о том что не может найти файл(hello.o) и не создает main.exe.
+## Задание 5
+### <img width="594" height="225" alt="image" src="https://github.com/user-attachments/assets/a5a49cda-5e42-4308-b606-810b98136004" />
 
