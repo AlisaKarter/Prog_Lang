@@ -67,3 +67,16 @@
 ## Задание 6
 ### <img width="513" height="66" alt="image" src="https://github.com/user-attachments/assets/62cb4970-3826-4ed5-9f3e-c22f329c1c10" />
 ## Задание 7
+### 1.Выполните сборку программы из объектных файлов и проверьте ее работоспособность.
+### <img width="505" height="205" alt="image" src="https://github.com/user-attachments/assets/843e9069-5022-43a2-94f0-b757a93decbe" />
+### 2.Проверьте какие команды из makefile выполняются при изменении каждого из исходных файлов.
+### <img width="484" height="87" alt="image" src="https://github.com/user-attachments/assets/2039ceec-a050-403f-afbf-7275801652e7" />
+#### При добавлении пустой строки в main.cpp и message.cpp соответственно перезаписываются файлы main.o и message.o после их изменения перезаписывается main.exe
+### 3.Проверьте, что произойдет при сборке, если один из объектных или исполняемых файлов будет потерян.
+### <img width="475" height="119" alt="image" src="https://github.com/user-attachments/assets/a0bf065c-1f81-44f5-935b-92813e2ebf3b" />
+#### При удалении файла main.exe make просто выполнит последнюю команду, не трогая .o файлы.
+#### При удалении hello.o make увидит, что нет hello.o, скомпилирует его из hello.cpp, а затем пересоберет main.exe.
+### 4.Для проверки правильности указания зависимостей измените прототип функции message на void message(char* mes);
+### <img width="1086" height="385" alt="image" src="https://github.com/user-attachments/assets/d5f6ec6d-93b3-40c8-a9f3-7af2d21223ad" />
+#### make пересобирает все объектные файлы (message.o, hello.o, goodbye.o, main.o), так как все они зависят от message.h.а потом сборка упадет с ошибкой.
+
