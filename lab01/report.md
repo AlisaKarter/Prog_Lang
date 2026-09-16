@@ -64,4 +64,6 @@
 #### При сборке, когда один фал потерян программа выводит сообщение о том что не может найти файл(hello.o) и не создает main.exe.
 ## Задание 5
 ### <img width="594" height="225" alt="image" src="https://github.com/user-attachments/assets/a5a49cda-5e42-4308-b606-810b98136004" />
-
+## Задание 6
+### <img width="513" height="66" alt="image" src="https://github.com/user-attachments/assets/62cb4970-3826-4ed5-9f3e-c22f329c1c10" />
+## Задание 7
