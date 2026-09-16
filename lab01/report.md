@@ -112,3 +112,10 @@
 ### <img width="768" height="554" alt="image" src="https://github.com/user-attachments/assets/9c04554c-4a50-4707-9e44-334e4ec078ee" />
 #### Компилируется только с C++17
 ## Задание 9
+### Результат:
+### <img width="462" height="683" alt="image" src="https://github.com/user-attachments/assets/a2c087f0-6f9d-4982-b86e-158a08682d9f" />
+#### O0 — отключает все оптимизации. Код выполняется точно так, как написан.
+### <img width="419" height="418" alt="image" src="https://github.com/user-attachments/assets/6af55e47-bd92-46fc-8540-ba6ef04d1281" />
+#### O1 - цикл останется, но будет более компактным, меньше операций с памятью.
+### <img width="424" height="300" alt="image" src="https://github.com/user-attachments/assets/8a4b35a0-88c9-425b-a9e7-8fe442a2851f" />
+#### O2 - цикл полностью исчезает, компилятор заменяет его на умножение
