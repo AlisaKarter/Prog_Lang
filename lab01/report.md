@@ -42,6 +42,7 @@
 - **F1** – вызов встроенной контекстной справки Far Manager.
 - **F10** – выход из программы.
 ## Задание 3
+### Результат:
 ### <img width="643" height="108" alt="image" src="https://github.com/user-attachments/assets/36fd8c63-7010-49ec-a3f5-1b27a8e00e3e" />
 ## Задание 4
 ### 1. Создать объектные файлы для каждой из единиц трансляции. Каждый файл получить отдельной командой.
@@ -63,20 +64,51 @@
 ### <img width="1083" height="89" alt="image" src="https://github.com/user-attachments/assets/8fd0e014-0d91-4f21-9dfc-f87a49f4e12e" />
 #### При сборке, когда один фал потерян программа выводит сообщение о том что не может найти файл(hello.o) и не создает main.exe.
 ## Задание 5
+### Результат:
 ### <img width="594" height="225" alt="image" src="https://github.com/user-attachments/assets/a5a49cda-5e42-4308-b606-810b98136004" />
 ## Задание 6
+### Результат:
 ### <img width="513" height="66" alt="image" src="https://github.com/user-attachments/assets/62cb4970-3826-4ed5-9f3e-c22f329c1c10" />
 ## Задание 7
 ### 1.Выполните сборку программы из объектных файлов и проверьте ее работоспособность.
+### Результат:
 ### <img width="505" height="205" alt="image" src="https://github.com/user-attachments/assets/843e9069-5022-43a2-94f0-b757a93decbe" />
 ### 2.Проверьте какие команды из makefile выполняются при изменении каждого из исходных файлов.
+### Результат:
 ### <img width="484" height="87" alt="image" src="https://github.com/user-attachments/assets/2039ceec-a050-403f-afbf-7275801652e7" />
 #### При добавлении пустой строки в main.cpp и message.cpp соответственно перезаписываются файлы main.o и message.o после их изменения перезаписывается main.exe
 ### 3.Проверьте, что произойдет при сборке, если один из объектных или исполняемых файлов будет потерян.
+### Результат:
 ### <img width="475" height="119" alt="image" src="https://github.com/user-attachments/assets/a0bf065c-1f81-44f5-935b-92813e2ebf3b" />
 #### При удалении файла main.exe make просто выполнит последнюю команду, не трогая .o файлы.
 #### При удалении hello.o make увидит, что нет hello.o, скомпилирует его из hello.cpp, а затем пересоберет main.exe.
 ### 4.Для проверки правильности указания зависимостей измените прототип функции message на void message(char* mes);
+### Результат:
 ### <img width="1086" height="385" alt="image" src="https://github.com/user-attachments/assets/d5f6ec6d-93b3-40c8-a9f3-7af2d21223ad" />
 #### make пересобирает все объектные файлы (message.o, hello.o, goodbye.o, main.o), так как все они зависят от message.h.а потом сборка упадет с ошибкой.
-
+## Задание 8
+### 1.Использование вектора
+### Результат:
+### <img width="913" height="478" alt="image" src="https://github.com/user-attachments/assets/5c8581fb-dc30-4f1e-8745-9b5cfb26b75f" />
+#### Компилируется во всех стандартах (C++98, C++03, C++11, C++14, C++17)
+### 2.Цикл по коллекции
+### Результат:
+### <img width="1112" height="623" alt="image" src="https://github.com/user-attachments/assets/b41c3cb1-ae1d-4314-b17f-293eebccae81" />
+#### Компилируется только с C++11 и новее
+### 3.Вывод типа по инициализатору
+### Результат:
+### <img width="872" height="569" alt="image" src="https://github.com/user-attachments/assets/1528cab3-dcd2-4fe3-81b7-b3fc9c3902bf" />
+#### Компилируется только с C++11 и новее
+### 4.Инициализация списком
+### Результат:
+### <img width="978" height="541" alt="image" src="https://github.com/user-attachments/assets/4c9dd0d5-457b-467b-a01a-fe27143072fb" />
+#### Компилируется только с C++11 и новее
+### 5.Сепараторы для групп разрядов.
+### Результат:
+### <img width="857" height="539" alt="image" src="https://github.com/user-attachments/assets/2c7650f1-7b5b-4c50-8e7a-5a6cbe183607" />
+#### Компилируется только с C++14 и новее
+### 6.Вывод типа по конструктору
+### Результат:
+### <img width="768" height="554" alt="image" src="https://github.com/user-attachments/assets/9c04554c-4a50-4707-9e44-334e4ec078ee" />
+#### Компилируется только с C++17 и новее
+## Задание 9
