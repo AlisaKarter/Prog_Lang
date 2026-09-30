@@ -112,8 +112,84 @@ std::cout << typeid(b).name() << std::endl;
 *Приведите разумные (логичные) примеры использования в 
 С++ ключевых слов* **typedef, auto, decltype, static_cast** и оператора **sizeof**.
 
-*Записанные программы сохраните в папке с номером задания. В отчет запишите пояснения к программам*.
+**Файл: typedef_exmpl.cpp**  
+```c++
+#include <iostream>
+#include <vector>
 
+typedef std::vector<int> IntVector;
+typedef long long LL;
+
+int main() {
+    IntVector numbers = {1, 2, 3, 4, 5};
+    LL number = 1000000000;
+    
+    std::cout << "Vector size: " << numbers.size() << std::endl;
+    std::cout << "Number: " << number << std::endl;
+}
+```
+Пояснение:  
+typedef позволяет создать короткое имя для сложного типа. В примере:  
+IntVector - псевдоним для std::vector<int>, что упрощает объявление векторов  
+LL - псевдоним для long long
+
+**Файл: auto_exmpl.cpp**  
+```c++
+#include <iostream>
+
+int main() {
+    auto x = 42;
+    auto y = 3.14;
+    auto z = true;
+    std::cout << x << " " << y << " " << z << std::endl;
+}
+```
+Пояснение: auto позволяет компилятору автоматически определить тип переменной по значению инициализатора. x будет int, y — double, z — bool.  
+
+**Файл: decltype_exmpl.cpp**  
+```c++
+#include <iostream>
+
+int main() {
+    int x = 10;
+    double y = 3.14;
+    decltype(x) a = 20;
+    decltype(y) b = 2.71;
+    std::cout << a << " " << b << std::endl;
+}
+```
+Пояснение: decltype(выражение) определяет тип переменной по типу другого выражения. a имеет тип int (как x), b имеет тип double (как y). 
+
+**Файл: static_cast_exmpl.cpp**  
+```c++
+#include <iostream>
+
+int main() {
+    double pi = 3.14159;
+    int x = static_cast<int>(pi);
+    std::cout << pi << " " << x << std::endl;
+    
+    int a = 5, b = 2;
+    double result = static_cast<double>(a) / b;
+    std::cout << result << std::endl;
+}
+```
+Пояснение: static_cast выполняет явное преобразование типа. В первом случае double преобразуется в int (отбрасывается дробная часть). Во втором случае int преобразуется в double, чтобы деление было вещественным (результат 2.5, а не 2).
+
+**Файл: sizeof_exmpl.cpp**  
+```c++
+#include <iostream>
+
+int main() {
+    std::cout << "char: " << sizeof(char) << std::endl;
+    std::cout << "int: " << sizeof(int) << std::endl;
+    std::cout << "double: " << sizeof(double) << std::endl;
+    
+    int x = 42;
+    std::cout << "x: " << sizeof(x) << std::endl;
+}
+```
+Пояснение: sizeof возвращает размер типа или переменной в байтах. Обычно char — 1 байт, int — 4 байта, double — 8 байт.
 ### Задание 6 **(2)**
 
 Рассмотрите следующий фрагмент программы. 
