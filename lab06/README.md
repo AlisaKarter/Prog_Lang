@@ -363,6 +363,21 @@ Python выделяет ему тот же адрес памяти 1402345678904
 25
 ```
 
+```python
+def sumint():
+    total = 0
+    for name, value in globals().items():
+        if type(value) is int:
+            total += value
+    return total
+```
+
+<img width="438" height="62" alt="image" src="https://github.com/user-attachments/assets/ad6616fc-7457-48c2-b8e2-9c918df6064c" />
+
+globals() — возвращает словарь всех глобальных переменных текущей среды (в данном случае IDLE). Ключи — имена переменных, значения — их значения.  
+for name, value in globals().items(): — проходим по всем переменным.  
+if type(value) is int: — проверяем, является ли значение точно типа int  
+
 ### Задание 4 **(10)**
 
 *В языке* **С++** *для получения информации о расположении переменной в памяти 
