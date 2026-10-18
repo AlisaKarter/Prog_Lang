@@ -9,11 +9,11 @@ namespace B {
 }
 
 namespace C {
-    int x = 30;
+    int x = A::x + B::x;
 }
 
 namespace D {
-    int x = 40;
+    int x = A::x + C::x;
 }
 
 int main() {
