@@ -15,9 +15,39 @@ int main() {
 ```
 *Проверьте четыре способа объявления* **Pi**.
 * ```const auto Pi = acos(0) * 2;```
+<img width="468" height="72" alt="image" src="https://github.com/user-attachments/assets/44e6d22a-9fce-4f02-993c-25bb519307ae" />
+
+Тип: const double  
+Время вычисления: Во время выполнения  
+Работает: Да  
+Пояснение: const означает, что значение нельзя изменить после инициализации, но оно вычисляется при запуске программы. acos(0) вызывается во время выполнения.  
+
 * ```constexpr auto Pi = std::acos(0) * 2;```
+
+<img width="581" height="116" alt="image" src="https://github.com/user-attachments/assets/47a06af1-fcf7-4186-b01c-0896db25f3a1" />
+
+Тип: constexpr double  
+Время вычисления: Во время компиляции  
+Работает: Да  
+Пояснение: constexpr требует, чтобы выражение было вычислено во время компиляции.  
+
 * ```const auto Pi = acos(x) * 2;```
+
+<img width="557" height="104" alt="image" src="https://github.com/user-attachments/assets/65b42afb-10de-4f28-b551-92005690c32f" />
+
+Тип: const double  
+Время вычисления: Во время выполнения  
+Работает: Да   
+Пояснение: Используется переменная x (которая равна 0). Хотя x имеет значение 0, она не является constexpr переменной, поэтому вычисление происходит во время выполнения.  
+
 * ```constexpr auto Pi = std::acos(x) * 2;```
+
+<img width="696" height="200" alt="image" src="https://github.com/user-attachments/assets/261b021b-ebc3-439e-8bf3-8f1a8e34a5e2" />
+
+Тип: constexpr double  
+Время вычисления: Во время компиляции  
+Работает: Нет  
+Пояснение: Переменная x не объявлена как constexpr, поэтому не может использоваться в constexpr контексте  
 
 *Что можно сказать об этих вариантах? Проверьте, в каких вариантах объявляется константа этапа трасляции.*
 
